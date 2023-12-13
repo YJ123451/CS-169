@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yousif's Ski Resort</title>
+    <style>
+       
+        * {
+            margin: 0;
+            padding: 100;
+        }
+
+        
+        .center-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .font-style {
+            font-family: 'YourChosenFont', sans-serif;
+        }
+      h2, h3 {
+        margin-top: 10px;
+          margin-bottom: 0px; 
+      }
+
+      
+        .header {
+            height: 20vh;
+          margin-top: 10px;
+        }
+
+        .logo {
+          max-width: 100%;
+          height: auto;
+          max-height: 200px;
+          position: relative;
+          top: -100px;
+          display: block;
+          margin: 0 auto;
+        }
+
+        .section {
+            text-align: center;
+        }
+.second-section{
+  text-align: right;
+
+}
+        .paragraph {
+            max-width: 400px;
+            margin-top: 20px;
+        }
+
+        .back-button {
+            position: fixed;
+            top: 0;
+            left: 0;
+            margin-top: 10px;
+            margin-left: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="back_to_start()" class="back-button center-content">Back to the main page</button>
+    <h1 class="header center-content font-style">Yousif's Ski Resort</h1>
+  <img src="{{ url_for('static', filename='ski_logo.jpeg') }}" alt="Ski Resort Logo" class="logo">
+    <section style = "margin-top: -150px;" >
+        <h2>About us:</h2>
+        <p class="paragraph font-style">Welcome to Yousif's Ski Resort, a winter wonderland where adventure meets relaxation. Nestled in the breathtaking mountains, our resort offers an unforgettable experience for skiers and snow enthusiasts of all levels.</p>
+   
+    <p class="paragraph font-style">Explore our pristine slopes, enjoy top-notch amenities, and immerse yourself in the cozy atmosphere of our lodge. Whether you're a seasoned pro or a first-time skier, Yousif's Ski Resort is your gateway to the ultimate winter escapade.</p>
+    <p class="paragraph font-style">Join us for an exhilarating journey on the slopes, savor delicious meals in our mountain-view restaurant, and unwind in our cozy accommodations after a day of outdoor excitement. Your winter adventure begins here at Yousif's Ski Resort!</p>
+       </section>
+  <section>
+  <h2>Resources:</h2>
+    <h3>Why you should ski!</h3>
+    <p class="paragraph font-style">Not only is skiing a great time, but it's beneficial for you as well! Check out the video below to see how skiing is a great workout, in addition to being a fun hobby!</p>
+    <a href="https://www.youtube.com/watch?v=UrBszL0NpNA&ab_channel=Rise%26Alpine"target="_blank" rel="noopener noreferrer">See what makes skiing a great decision!</a> 
+    <h3>What to know when beginning your skiiing journey:</h3>
+    <p class="paragraph font-style">We can totally understand being anxious or scared of trying something new for the first time, but you won't have to worry about embarrasing yourself on the slopes! Everybody was a beginner once, and here's a video below to help get you started!</p>
+    <a href = "https://www.youtube.com/watch?v=n-UBie4Ioqo" target="_blank" rel="noopener noreferrer" >How to start skiing!</a>
+  </section>
+    <script>
+        function back_to_start() {
+            window.location.href = "https://yousifsskiresort.replit.app/";
+        }
+    </script>
+</body>
+</html>
